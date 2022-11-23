@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Application Details</title>
+</head>
+<style>
+  th{
+    width: 50%;
+    text-align: left;
+  }
+  
+</style>
+    <div class="container text-center my-1">
+        <div class="" role="alert" id="alertBox">
+          <strong><p id="alert-msg"></p></strong>
+        </div>
+        
+        
+        <div class="text-center inline">
+          <img src="./dbatu.jpg" class="rounded" alt="...">
+        </div>
+
+        <div class="container  19  card  " style="margin-top:20px;">
+          <div class="text-center">
+            <h4>Application Deatils</h4>
+        </div>
+        <form name="myform" class="form-group" action="#" id="InstiTuteDetForm">
+          
+
+          <div class="row bg-light text-dark" id="Form_1" >
+          <table class="table table-bordered">
+           
+           <tr>
+          <div class= "">
+            <th style="text-align: left;"> Extension of Affiliation<label class="requiredField" style="color:red;"> *</label>
+            </th>
+          </div>
+          <div class= "">
+            <th style="text-align: left; width:70%"><div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ExtentionAffilation" id="ExtAff" value="Yes">
+              <label class="form-check-label" for="PanYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="ExtentionAffilation" id="ExtAff" value="No">
+              <label class="form-check-label" for="ExtentionAffilation">No</label>
+            </div> </th>
+          </div>
+
+           </tr>
+           <tr>
+            <div class="col text-left">
+              <th>Increase in Intake<label class="requiredField" style="color:red;"> *</label>
+              </th>
+            </div>
+            <div class= "">
+              <th><div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="IncrIntakeY" id="IncrIntk" value="Yes">
+                <label class="form-check-label" for="IncrIntakeY">Yes</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="IncrIntakeY" id="IncrIntk" value="No">
+                <label class="form-check-label" for="IncrIntakeY">No</label>
+              </div> </th>
+            </div>
+  
+             </tr>
+             <tr>
+              <div class="col text-left">
+                <th>Closure of Course / Reduction in Intake <label class="requiredField" style="color:red;"> *</label>
+                </th>
+              </div>
+              <div class= "">
+                <th><div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="ClosureCrs" id="ClosureCrs" value="Yes">
+                  <label class="form-check-label" for="ClosureCrs">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="ClosureCrs" id="ClosureCrs" value="No">
+                  <label class="form-check-label" for="ClosureCrs">No</label>
+                </div> </th>
+              </div>
+    
+               </tr>
+               <tr>
+                <div class="col text-left">
+                  <th>Change of name of the Institute <label class="requiredField" style="color:red;"> *</label>
+                  </th>
+                </div>
+                <div class= "">
+                  <th><div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ChngName" id="ChngName" value="Yes">
+                    <label class="form-check-label" for="ChngName">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ChngName" id="ChngName" value="No">
+                    <label class="form-check-label" for="ChngName">No</label>
+                  </div> </th>
+                </div>
+      
+                 </tr>
+                 <tr>
+                  <div class="col text-left">
+                    <th> Conversion of Women’s Institution into Co-Ed 
+                      Institution<label class="requiredField" style="color:red;"> *</label>
+                    </th>
+                  </div>
+                  <div class= "">
+                    <th><div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="ConvrWomen" id="ConvrWomen" value="Yes">
+                      <label class="form-check-label" for="ConvrWomen">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="ConvrWomen" id="ConvrWomen" value="No">
+                      <label class="form-check-label" for="ConvrWomen">No</label>
+                    </div> </th>
+                  </div>
+        
+                   </tr>
+                   <tr>
+                    <div class="col text-left">
+                      <th> Introduction of Second Shift<label class="requiredField" style="color:red;"> *</label>
+                      </th>
+                    </div>
+                    <div class= "">
+                      <th><div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="IntroS" id="IntroS" value="Yes">
+                        <label class="form-check-label" for="IntroS">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="IntroS" id="IntroS" value="No">
+                        <label class="form-check-label" for="IntroS">No</label>
+                      </div> </th>
+                    </div>
+          
+                     </tr>
+                     <tr ><th class="bg-light text-center" colspan="2">
+                      <h5 class="bg-light"><div class= "">Continuation/ Extension
+                      </div></h5></th></tr>
+                      <tr>
+                        <div class="col text-left">
+                          <th>Continuation of Affiliation<label class="requiredField" style="color:red;"> *</label>
+                          </th>
+                        </div>
+                        <div class= "">
+                          <th><div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ContAff_2" id="ContAff_2" value="Yes">
+                            <label class="form-check-label" for="PanYes">Yes</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="ContAff_2" id="ContAff_2" value="No">
+                            <label class="form-check-label" for="ContAff_2">No</label>
+                          </div> </th>
+                        </div>
+              
+                         </tr>
+                         
+                           <tr>
+                            <div class="col text-left">
+                              <th> Increase in Intake<label class="requiredField" style="color:red;"> *</label>
+                              </th>
+                            </div>
+                            <div class= "">
+                              <th><div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="IncrI_2" id="IncrI_2" value="Yes">
+                                <label class="form-check-label" for="IncrI_2">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="IncrI_2" id="IncrI_2" value="No">
+                                <label class="form-check-label" for="IncrI_2">No</label>
+                              </div> </th>
+                            </div>
+                  
+                             </tr>
+                            
+                               <tr>
+                                <div class="col text-left">
+                                  <th>Change of name of the Institute<label class="requiredField" style="color:red;"> *</label>
+                                  </th>
+                                </div>
+                                <div class= "">
+                                  <th><div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ChngName_2" id="ChngName_2" value="Yes">
+                                    <label class="form-check-label" for="ChngName_2">Yes</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ChngName_2" id="ChngName_2" value="No">
+                                    <label class="form-check-label" for="ChngName_2">No</label>
+                                  </div> </th>
+                                </div>
+                      
+                                 </tr>
+                                 <tr>
+                                  <div class="col text-left">
+                                    <th>Conversion of Women’s Institution into Co-Ed 
+                                      Institution <label class="requiredField" style="color:red;"> *</label>
+                                    </th>
+                                  </div>
+                                  <div class= "">
+                                    <th><div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="ConvrWomen_2" id="ConvrWomen_2" value="Yes">
+                                      <label class="form-check-label" for="ConvrWomen_2">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="ConvrWomen_2" id="ConvrWomen_2" value="No">
+                                      <label class="form-check-label" for="ConvrWomen_2">No</label>
+                                    </div> </th>
+                                  </div>
+                        
+                                   </tr>
+                                 <tr>
+                                  <div class="col text-left">
+                                    <th> Introduction of Second Shift <label class="requiredField" style="color:red;"> *</label>
+                                    </th>
+                                  </div>
+                                  <div class= "">
+                                    <th><div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="Intro_SS_2" id="Intro_SS_2" value="Yes">
+                                      <label class="form-check-label" for="Intro_SS_2">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                      <input class="form-check-input" type="radio" name="Intro_SS_2" id="Intro_SS_2" value="No">
+                                      <label class="form-check-label" for="Intro_SS_2">No</label>
+                                    </div> </th>
+                                  </div>
+                        
+                                   </tr>
+                                   <tr><td colspan="2"><div class="d-flex justify-content-end">
+                                    <button type="button" class="btn btn-info" id="NxtBtn" >Next</button>
+                                     </div></td></tr>
+                                     
+
+
+                                    
+         </table>
+        </div>
+         <div class="row bg-light text-dark" id="Form_2" hidden>
+         
+          
+          <table class="table table-bordered">
+            <tr ><th class="bg-light"colspan="2">
+              <h5 class="bg-light"><div class= "text-center">Permanent Affiliation</div></h5></th></tr>
+              
+            <tr>
+              <div class="col text-left">
+                <th> Increase in Intake <label class="requiredField" style="color:red;"> *</label>
+                </th>
+              </div>
+              <div class= "">
+                <th><div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="IncrI_3" id="IncrI_3" value="Yes">
+                  <label class="form-check-label" for="IncrI_3">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="IncrI_3" id="IncrI_3" value="No">
+                  <label class="form-check-label" for="IncrI_3">No</label>
+                </div> </th>
+              </div>
+    
+               </tr>
+               <tr>
+                <div class="col text-left">
+                  <th>Closure of Course / Reduction in Intake <label class="requiredField" style="color:red;"> *</label>
+                  </th>
+                </div>
+                <div class= "">
+                  <th><div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ClosureCrs_3" id="ClosureCrs_3" value="Yes">
+                    <label class="form-check-label" for="ClosureCrs_3">Yes</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="ClosureCrs_3" id="ClosureCrs_3" value="No">
+                    <label class="form-check-label" for="ClosureCrs_3">No</label>
+                  </div> </th>
+                </div>
+      
+                 </tr>
+                 <tr>
+                  <div class="col text-left">
+                    <th> Change of name of the Institute <label class="requiredField" style="color:red;"> *</label>
+                    </th>
+                  </div>
+                  <div class= "">
+                    <th><div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="ChngName_3" id="ChngName_3" value="Yes">
+                      <label class="form-check-label" for="ChngName_3">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="ChngName_3" id="ChngName_3" value="No">
+                      <label class="form-check-label" for="ChngName_3">No</label>
+                    </div> </th>
+                  </div>
+        
+                   </tr>
+                   <tr>
+                    <div class="col text-left">
+                      <th>Conversion of Women’s Institution into Co-Ed 
+                        Institution <label class="requiredField" style="color:red;"> *</label>
+                      </th>
+                    </div>
+                    <div class= "">
+                      <th><div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ConvrWomen_3" id="ConvrWomen_3" value="Yes">
+                        <label class="form-check-label" for="ConvrWomen_3">Yes</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="ConvrWomen_3" id="ConvrWomen_3" value="No">
+                        <label class="form-check-label" for="ConvrWomen_3">No</label>
+                      </div> </th>
+                    </div>
+          
+                     </tr>
+                     <tr>
+                      <div class="col text-left">
+                        <th> Introduction of Second Shift<label class="requiredField" style="color:red;"> *</label>
+                        </th>
+                      </div>
+                      <div class= "">
+                        <th><div class="form-check form-check-inline">
+                          <input class="form-check-input" type="radio" name="Intro_SS_3" id="Intro_SS_3" value="Yes">
+                          <label class="form-check-label" for="Intro_SS_3">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline ">
+                          <input class="form-check-input" type="radio" name="Intro_SS_3" id="Intro_SS_3" value="No">
+                          <label class="form-check-label" for="Pan">No</label>
+                        </div> </th>
+                      </div>
+            
+                       </tr>
+                       <tr ><th class="bg-light"colspan="2">
+                        <h5 class="bg-light"><div class= "">   </div></h5></th></tr>
+                        
+                      <tr>
+                        <div class="col text-left">
+                          <th> New Course <label class="requiredField" style="color:red;"> *</label>
+                          </th>
+                        </div>
+                        <div class= "">
+                          <th> <select class="form-select" aria-label="New_Crs" id="New_Crs" required>
+                            <option selected value="">Select Course</option>
+                            <option value="UG">UG.</option>
+                            <option value="PG">PG</option> </th>
+                        </div>
+              
+                         </tr>
+                         <tr>
+                          <div class="col text-left">
+                            <th>Syllabus <label class="requiredField" style="color:red;"> *</label>
+                            </th>
+                          </div>
+                          <div class= "">
+                            <th><div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="Syllabi" id="Syllabi" value="Yes">
+                              <label class="form-check-label" for="Syllabi">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="Syllabi" id="Syllabi" value="No">
+                              <label class="form-check-label" for="Syllabi">No</label>
+                            </div> </th>
+                          </div>
+                
+                           </tr>
+                           <tr>
+                            <div class="col text-left">
+                              <th> New College <label class="requiredField" style="color:red;"> *</label>
+                              </th>
+                            </div>
+                            <div class= "">
+                              <th><div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NewClg" id="NewClg" value="Yes">
+                                <label class="form-check-label" for="NewClg">Yes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="NewClg" id="NewClg" value="No">
+                                <label class="form-check-label" for="NewClg">No</label>
+                              </div> </th>
+                            </div>
+                  
+                             </tr>
+                             <tr>
+                              <div class="col text-left">
+                                <th>Research Center (Continuation)  <label class="requiredField" style="color:red;"> *</label>
+                                </th>
+                              </div>
+                              <div class= "">
+                                <th><div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="ResearchCent" id="ResearchCent" value="Yes">
+                                  <label class="form-check-label" for="ResearchCent">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="radio" name="ResearchCent" id="ResearchCent" value="No">
+                                  <label class="form-check-label" for="ResearchCent">No</label>
+                                </div> </th>
+                              </div>
+                    
+                               </tr>
+                               <tr>
+                                <div class="col text-left">
+                                  <th>  Research Center (New) <label class="requiredField" style="color:red;"> *</label>
+                                  </th>
+                                </div>
+                                <div class= "">
+                                  <th><div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ResearchCent_New" id="ResearchCent_New" value="Yes">
+                                    <label class="form-check-label" for="ResearchCent_New">Yes</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="ResearchCent_New" id="ResearchCent_New" value="No">
+                                    <label class="form-check-label" for="ResearchCent_New">No</label>
+                                  </div> </th>
+                                </div>
+                      
+                                 </tr>
+                                 <tr><td colspan="2">
+                                 <div class="d-flex justify-content-between">
+                                  <button type="button" class="btn btn-info" id="PrevBtn" >Prevaious</button>
+                                  </div><div class="text-center">
+                                  <button type="Submit" class="btn btn-info text-center" id="SubBtn" >Submit</button>
+                                </div></td></tr>
+            </table>
+         </div>
+
+
+
+        </form>
+       </div>
+       </div>
+       
+
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    
+                </script>
+              <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="crossorigin="anonymous"> </script> 
+              <script type="module">
+               import * as func from"./validation.js"
+
+                $(document).ready(function(){
+$("#NxtBtn").click(function(){
+ 
+
+  document.getElementById("Form_1").hidden=true;
+  document.getElementById("Form_2").hidden=false;
+
+
+});
+$("#PrevBtn").click(function(){
+ 
+ 
+   document.getElementById("Form_1").hidden=false;
+   document.getElementById("Form_2").hidden=true;
+ 
+ 
+ });
+
+ $("#SubBtn").click(function(e){
+ 
+
+
+
+var slect=document.getElementById("New_Crs").value
+ var numberOfRadio= $('input:radio').length;
+ var numberOfChecked=$('input:radio:checked').length;
+var requiredNo=numberOfRadio/2;
+  if(requiredNo==numberOfChecked&&slect!=""){
+    func.SendAlert("Submited Successfully.","alert alert-success")
+        setTimeout(()=>{
+            func.SendAlert("","")
+        },3000)
+  }else{
+    e.preventDefault();
+    func.SendAlert("Please fill all requird(*)field.","alert alert-danger")
+        setTimeout(()=>{
+            func.SendAlert("","")
+        },3000)
+  }
+ 
+ 
+
+ 
+ });
+ 
+
+
+});
+                
+</script>          
+</body>
+</html>

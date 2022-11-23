@@ -1,0 +1,35 @@
+body{
+   background-image:url("bg1.jpg");
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+    
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+.regi{
+   opacity: 0.7;
+   width:25%;
+   font-family: "Times New Roman", Times, serif;
+   margin-left: 20%;
+   margin-top: 7%;
+   font-size: 23px;
+ 
+}
+.qr-container{
+   opacity: 0.7;
+   width:25%;
+   font-family: "Times New Roman", Times, serif;
+   margin-left: 50%;
+   font-size: 23px;
+}
+.qrcontainer{
+   opacity: 0.7;
+   width:25%;
+   font-family: "Times New Roman", Times, serif;
+   margin-left: 20%;
+   margin-top: 3%;
+   font-size: 23px;
+
+}
